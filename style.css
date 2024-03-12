@@ -1,0 +1,143 @@
+:root {
+  --color-primary: #d8c3a4;
+  --color-secondary: #eae8dc;
+  --color-primary-light: #272c25;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-secondary);
+}
+
+/*
+    HEADER
+*/
+
+.header {
+  width: auto;
+  height: 80px;
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.header .search {
+  position: relative;
+}
+
+.header .search .inputSearch {
+  width: 506px;
+  height: 42px;
+  border-radius: 10px;
+  border: 0px solid var(--color-secondary);
+  padding: 15px;
+}
+
+.header .search #iconSearch {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.header .iconesHeader {
+  width: 90px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .iconesHeader #iconCart,
+#iconProfile {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: var(--color-primary);
+  height: 48px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar ul li {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin: 0 40px 0 40px;
+}
+
+.navbar ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-primary-light);
+  padding: 16px;
+}
+
+.container {
+  width: 1170px;
+  margin: 60px auto;
+}
+
+.container .botaoVerMais {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0 10px 0;
+  background: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.container .linha {
+  border-top: 1px solid black;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 5px 15px 5px;
+}
+
+.titulo label {
+  width: 100px;
+}
+
+.listaItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listaItem .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 290px;
+}
+
+.listaItem .item .fotoItem {
+  width: 192px;
+  height: 240px;
+  background-color: white;
+}

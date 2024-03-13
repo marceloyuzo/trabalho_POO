@@ -15,9 +15,9 @@ body {
   background-color: var(--color-secondary);
 }
 
-/*
+/**************
     HEADER
-*/
+***************/
 
 .header {
   width: auto;
@@ -31,6 +31,11 @@ body {
 
 .header .search {
   position: relative;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--color-primary-light);
 }
 
 .header .search .inputSearch {
@@ -63,6 +68,10 @@ body {
   cursor: pointer;
 }
 
+/**************
+    NAVBAR
+***************/
+
 .navbar {
   background-color: var(--color-primary);
   height: 48px;
@@ -92,12 +101,16 @@ body {
   padding: 16px;
 }
 
-.container {
+/*****************************
+    CONTEUDO MENU INICIAL
+******************************/
+
+.containerMenuInicial {
   width: 1170px;
   margin: 60px auto;
 }
 
-.container .botaoVerMais {
+.containerMenuInicial .botaoVerMais {
   width: 100%;
   height: 40px;
   margin: 20px 0 10px 0;
@@ -107,7 +120,7 @@ body {
   font-size: 20px;
 }
 
-.container .linha {
+.containerMenuInicial .linha {
   border-top: 1px solid black;
   width: 100%;
   margin-left: 15px;
@@ -140,4 +153,142 @@ body {
   width: 192px;
   height: 240px;
   background-color: white;
+}
+
+/***********************************
+      CONTEUDO CADASTRO USUARIO
+************************************/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.contentCadastroUsuario {
+  width: 551px;
+  height: 655px;
+  height: auto;
+  background-color: #d8c3a4;
+  border-radius: 10px;
+}
+
+.contentCadastroUsuario h2 {
+  padding: 35px 0;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  color: vaR(--color-primary-light);
+}
+
+.contentCadastroUsuario #formCadastroUsuario {
+  display: flex;
+  flex-direction: column;
+  padding: 0 46px;
+}
+
+.contentCadastroUsuario #formCadastroUsuario input {
+  background-color: var(--color-secondary);
+  height: 43px;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.contentCadastroUsuario #formCadastroUsuario button {
+  background-color: var(--color-secondary);
+  height: 43px;
+  border: none;
+  border-radius: 7px;
+  margin: 43px 0 38px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contentCadastroUsuario #formCadastroUsuario div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.contentCadastroUsuario #formCadastroUsuario div label {
+  font-size: 20px;
+}
+
+/***********************************
+          CONTEUDO LOGIN
+************************************/
+.contentLogin {
+  display: flex;
+  flex-direction: column;
+  width: 551px;
+  height: 655px;
+  height: auto;
+  background-color: #d8c3a4;
+  border-radius: 10px;
+}
+
+.contentLogin h2 {
+  padding: 35px 0;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  color: vaR(--color-primary-light);
+}
+
+.contentLogin #formLogin {
+  display: flex;
+  flex-direction: column;
+  padding: 0 46px;
+}
+
+.contentLogin #formLogin input {
+  background-color: var(--color-secondary);
+  height: 43px;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.contentLogin #formLogin button {
+  background-color: var(--color-secondary);
+  height: 43px;
+  border: none;
+  border-radius: 7px;
+  margin: 43px 0 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contentLogin #formLogin div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+
+.contentLogin #formLogin div label {
+  font-size: 20px;
+}
+
+.contentLogin a {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: var(--color-primary-light);
+}
+
+/***********************************
+          CONTEUDO PRODUTO
+************************************/
+
+.contentProduto {
+  height: 1021px;
+  width: 1007px;
+}
+
+.contentProduto .historico .linha {
+  border-top: 1px solid black;
+  width: 100%;
+  margin-left: 15px;
 }

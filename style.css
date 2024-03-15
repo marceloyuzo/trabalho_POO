@@ -19,8 +19,19 @@ body {
     HEADER
 ***************/
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin-top: 300px;
+}
+
 .header {
-  width: auto;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
   height: 80px;
   background-color: var(--color-primary);
   display: flex;
@@ -73,6 +84,10 @@ body {
 ***************/
 
 .navbar {
+  position: fixed;
+  top: 80px;
+  left: 0px;
+  width: 100%;
   background-color: var(--color-primary);
   height: 48px;
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
@@ -107,10 +122,13 @@ body {
 
 .containerMenuInicial {
   width: 1170px;
-  margin: 60px auto;
+  margin: 200px auto 60px;
 }
 
 .containerMenuInicial .botaoVerMais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 40px;
   margin: 20px 0 10px 0;
@@ -118,6 +136,15 @@ body {
   border: none;
   border-radius: 10px;
   font-size: 20px;
+}
+
+.containerMenuInicial .botaoVerMais a {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding: 9px 0;
+  font-weight: 600;
+  color: var(--color-primary-light);
 }
 
 .containerMenuInicial .linha {
@@ -130,7 +157,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 25px 5px 15px 5px;
+  margin: 25px 5px 0px 5px;
 }
 
 .titulo label {
@@ -138,8 +165,14 @@ body {
 }
 
 .listaItem {
+  margin: 20px 0 5px 0;
   display: flex;
   justify-content: space-between;
+}
+
+.listaItem a {
+  text-decoration: none;
+  color: var(--color-primary-light);
 }
 
 .listaItem .item {
@@ -147,6 +180,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 290px;
+  cursor: pointer;
 }
 
 .listaItem .item .fotoItem {
@@ -158,14 +192,17 @@ body {
 /***********************************
       CONTEUDO CADASTRO USUARIO
 ************************************/
-.container {
+.containerCadastro {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
+  margin-top: 10vh;
 }
 
 .contentCadastroUsuario {
+  display: flex;
+  flex-direction: column;
   width: 551px;
   height: 655px;
   height: auto;
@@ -287,8 +324,98 @@ body {
   width: 1007px;
 }
 
+.contentProduto .historico {
+  font-size: 14px;
+}
+
 .contentProduto .historico .linha {
   border-top: 1px solid black;
   width: 100%;
-  margin-left: 15px;
+  margin-bottom: 30px;
+}
+
+.contentProduto .historico ul {
+  display: flex;
+  list-style: none;
+}
+
+.contentProduto .historico ul li a {
+  text-decoration: none;
+  color: var(--color-primary-light);
+}
+
+.produto {
+  margin-left: 20px;
+}
+
+.produto .nomeProduto {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.produto .infoProduto {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 60px;
+}
+
+.produto .infoProduto .fotoProduto {
+  width: 447px;
+  height: 449px;
+  background-color: white;
+}
+
+.produto .infoProduto .preco {
+  font-size: 58px;
+}
+
+.produto .infoProduto .comprarBotao {
+  background-color: var(--color-primary);
+  color: var(--color-primary-light);
+  width: 260px;
+  height: 64px;
+  font-size: 32px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.descProduto {
+  font-size: 18px;
+}
+
+.descProduto .linha {
+  border-top: 1px solid black;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.descProduto .infoDesc {
+  margin-left: 20px;
+}
+
+/***********************************
+      CONTEUDO FORMA PAGAMENTO
+************************************/
+.contentPagamento {
+  height: 1021px;
+  width: 1007px;
+}
+
+.contentPagamento .linha {
+  border-top: 1px solid black;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.contentPagamento .formaPagamento {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.contentPagamento .formaPagamento .botaoPagamento {
+  border: none;
+  background-color: var(--color-primary);
 }

@@ -24,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 90vh;
-  margin-top: 300px;
+  margin-top: 90px;
 }
 
 .header {
@@ -259,7 +259,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 551px;
-  height: 655px;
   height: auto;
   background-color: #d8c3a4;
   border-radius: 10px;
@@ -320,7 +319,7 @@ body {
 ************************************/
 
 .contentProduto {
-  height: 1021px;
+  margin-top: 150px;
   width: 1007px;
 }
 
@@ -399,8 +398,11 @@ body {
       CONTEUDO FORMA PAGAMENTO
 ************************************/
 .contentPagamento {
-  height: 1021px;
   width: 1007px;
+}
+
+.contentPagamento #feedback {
+  top: 20px;
 }
 
 .contentPagamento .linha {
@@ -411,11 +413,88 @@ body {
 
 .contentPagamento .formaPagamento {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contentPagamento .formaPagamento div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+  color: var(--color-primary-light-);
+}
+
+.contentPagamento .formaPagamento span {
+  font-size: 40px;
+  margin-right: 10px;
 }
 
 .contentPagamento .formaPagamento .botaoPagamento {
+  border-radius: 3px;
+  height: 16px;
+  width: 16px;
+  margin: 0 10px 0 10px;
+}
+
+.contentPagamento .botaoFinalizar {
+  margin-top: 360px;
+  margin-left: 680px;
+  width: 310px;
+  height: 64px;
+  font-size: 22px;
+  letter-spacing: 3px;
   border: none;
+  border-radius: 7px;
   background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+/****************************
+      CONTEUDO FEEDBACK
+****************************/
+
+.contentFeedback {
+  width: 1058px;
+}
+
+.contentFeedback h3 {
+  margin: 100px 0 140px 0;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.contentFeedback .linha {
+  border-top: 1px solid black;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.contentFeedback .infoPedido {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contentFeedback .infoPedido div {
+  margin-bottom: 10px;
+}
+
+.contentFeedback .botaoVoltarMenu {
+  margin-top: 220px;
+  margin-left: 740px;
+  width: 310px;
+  height: 64px;
+  font-size: 22px;
+  letter-spacing: 3px;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--color-primary);
+  cursor: pointer;
 }

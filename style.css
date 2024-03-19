@@ -157,6 +157,10 @@ body {
   margin: 0 40px 0 40px;
 }
 
+.navbar ul li:hover {
+  background-color: var(--color-secondary);
+}
+
 .navbar ul li a {
   font-size: 14px;
   font-weight: bold;
@@ -541,7 +545,7 @@ body {
 }
 
 .contentFeedback .botaoVoltarMenu {
-  margin-top: 220px;
+  margin-top: 180px;
   margin-left: 740px;
   width: 310px;
   height: 64px;
@@ -559,7 +563,10 @@ body {
 .contentListaUsuarios {
   width: 1170px;
   display: flex;
+  margin: auto;
   justify-content: space-between;
+  position: absolute;
+  top: 200px;
 }
 
 .contentListaUsuarios .menuCadastro {
@@ -695,4 +702,225 @@ body {
   margin: 20px 10px 0px;
   padding: 10px 20px;
   cursor: pointer;
+}
+
+/********************************
+      LISTA USUARIOS FORM
+*********************************/
+
+.contentListaUsuarios #formUsuario {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 800px;
+  height: auto;
+  background-color: var(--color-secondary);
+  border-radius: 7px;
+}
+
+.contentListaUsuarios #formUsuario .divisao {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contentListaUsuarios #formUsuario label {
+  margin-left: 3px;
+  color: var(--color-primary-light);
+  letter-spacing: 1px;
+}
+
+.contentListaUsuarios #formUsuario input {
+  border-radius: 6px;
+  border: none;
+  background-color: var(--color-primary);
+  padding: 7px 7px 7px 10px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  height: 30px;
+}
+
+.contentListaUsuarios #formUsuario #idInput {
+  width: 50px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formUsuario #nomeInput {
+  width: 440px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formUsuario #cpfInput {
+  width: 170px;
+}
+
+.contentListaUsuarios #formUsuario #telefoneInput {
+  width: 240px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formUsuario #enderecoInput {
+  width: 460px;
+}
+
+.contentListaUsuarios #formUsuario #emailInput {
+  width: 350px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formUsuario #senhaInput {
+  width: 350px;
+}
+
+.contentListaUsuarios .listaUsuarios #botaoSalvar {
+  font-size: 18px;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--color-primary-light);
+  margin: 20px 10px 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 680px;
+}
+
+/**************************
+      LISTA PRODUTOS
+***************************/
+.contentListaUsuarios .tabela .colunaCheckP {
+  margin: 20px 10px 20px 20px;
+}
+
+.contentListaUsuarios .tabela .colunaCheckP .linhaCheckP {
+  margin: 10px 0 15px;
+}
+
+.contentListaUsuarios .tabela .colunaIDP {
+  margin: 20px 30px 20px 20px;
+}
+
+.contentListaUsuarios .tabela .colunaIDP .linhaIDP {
+  margin: 10px 0 15px;
+}
+
+.contentListaUsuarios .tabela .colunaValor {
+  margin: 20px 0px 20px 20px;
+}
+
+.contentListaUsuarios .tabela .linhaValor {
+  margin: 10px 0 15px;
+}
+
+.contentListaUsuarios .tabela .colunaEstimativa {
+  margin: 20px 10px 20px 40px;
+}
+
+.contentListaUsuarios .tabela .linhaEstimativa {
+  margin: 10px 0 15px;
+}
+
+.contentListaUsuarios .tabela .colunaCriado {
+  margin: 20px 20px 20px 40px;
+}
+
+.contentListaUsuarios .tabela .linhaCriado {
+  margin: 10px 0 15px;
+}
+
+.contentListaUsuarios .tabela .colunaPagamento {
+  margin: 20px 40px 20px 30px;
+}
+
+.contentListaUsuarios .tabela .linhaPagamento {
+  margin: 10px 0 15px;
+}
+
+/********************************
+      LISTA USUARIOS FORM
+*********************************/
+.contentListaUsuarios #formPedido {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 800px;
+  height: auto;
+  background-color: var(--color-secondary);
+  border-radius: 7px;
+}
+
+.contentListaUsuarios #formPedido .divisao {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contentListaUsuarios #formPedido label {
+  margin-left: 3px;
+  color: var(--color-primary-light);
+  letter-spacing: 1px;
+}
+
+.contentListaUsuarios #formPedido input {
+  border-radius: 6px;
+  border: none;
+  background-color: var(--color-primary);
+  padding: 7px 7px 7px 10px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  height: 30px;
+}
+
+.contentListaUsuarios #formPedido #idPedidoInput {
+  width: 80px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formPedido #idUsuarioInput {
+  width: 80px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formPedido #idProdutoInput {
+  width: 80px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formPedido #previsaoInput {
+  width: 170px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formPedido #criadoInput {
+  width: 170px;
+}
+
+.contentListaUsuarios #formPedido #freteInput {
+  width: 150px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formPedido #valorInput {
+  width: 150px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formPedido #pagamentoInput {
+  width: 160px;
+  margin-right: 40px;
+}
+
+.contentListaUsuarios #formPedido #estadoInput {
+  width: 160px;
+}
+
+.contentListaUsuarios .listaUsuarios #botaoSalvar {
+  font-size: 18px;
+  border-radius: 7px;
+  letter-spacing: 2px;
+  border: none;
+  background-color: var(--color-secondary);
+  color: var(--color-primary-light);
+  margin: 20px 10px 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 680px;
 }

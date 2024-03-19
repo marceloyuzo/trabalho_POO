@@ -76,44 +76,81 @@
     </div>
 
     <div class="container">
-      <div class="contentFeedback">
-        <h3>Pedido realizado com sucesso!</h3>
+      <div class="contentListaUsuarios">
+        <div class="menuCadastro">
+          <h2>CADASTROS</h2>
 
-        <div class="feedbackTitulo">
-          Detalhes do Pedido
-          <div class="linha"></div>
+          <ul>
+            <li>
+              <a href="cadastroUsuarios.html">Usuarios</a>
+            </li>
+            <li>
+              <a href="cadastroPedidos.html">Pedidos</a>
+            </li>
+          </ul>
         </div>
+        <div class="listaUsuarios">
+          <div class="headerLista">
+            <h2>Pedidos</h2>
+          </div>
 
-        <div id="infoPedido">
-          <div>
-            <label>Número do Pedido: </label>
-            <label id="nroPedido">teste</label>
-          </div>
-          <div>
-            <label>Nome do Produto: </label>
-            <label id="nomeProduto">teste</label>
-          </div>
-          <div>
-            <label>Valor Total: </label>
-            <label id="valorTotal">teste</label>
-          </div>
-          <div>
-            <label>Forma de Pagamento: </label>
-            <label id="tipoPagamento">teste</label>
-          </div>
-          <div>
-            <label>Previsão de Entrega: </label>
-            <label id="previsaoEntrega">teste</label>
-          </div>
+          <form id="formPedido">
+            <div class="divisao">
+              <div>
+                <label>ID Ped.<br /></label>
+                <input type="text" id="idPedidoInput" />
+              </div>
+
+              <div>
+                <label>ID Usu.<br /></label>
+                <input type="text" id="idUsuarioInput" />
+              </div>
+
+              <div>
+                <label>ID Prod.<br /></label>
+                <input type="text" id="idProdutoInput" />
+              </div>
+
+              <div>
+                <label>Previsão Entrega<br /></label>
+                <input type="date" id="previsaoInput" />
+              </div>
+              <div>
+                <label>Data Criado<br /></label>
+                <input type="date" id="criadoInput" />
+              </div>
+            </div>
+
+            <div class="divisao">
+              <div>
+                <label>Valor Frete<br /></label>
+                <input type="text" id="freteInput" />
+              </div>
+
+              <div>
+                <label>Valor Total<br /></label>
+                <input type="text" id="valorInput" />
+              </div>
+
+              <div>
+                <label>Forma Pagamento<br /></label>
+                <input type="text" id="pagamentoInput" />
+              </div>
+
+              <div>
+                <label>Estado<br /></label>
+                <input type="text" id="estadoInput" />
+              </div>
+            </div>
+          </form>
+
+          <button id="botaoSalvar">SALVAR</button>
         </div>
-
-        <a href="index.html">
-          <button class="botaoVoltarMenu">VOLTAR PARA O MENU</button>
-        </a>
       </div>
     </div>
 
-    <script src="scriptFeedback.js"></script>
     <script src="script.js"></script>
+    <script src="scriptPedidos.js"></script>
+    <script src="scriptCadastroPedido.js"></script>
   </body>
 </html>

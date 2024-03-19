@@ -16,11 +16,20 @@ async function getUsuario() {
   }
 }
 
+async function deleteUsuario(idUsuario) {
+  try {
+    const response = await API.delete(`/usuarios/${idUsuario}`);
+    console.log("Usuario deletado.");
+
+    getUsuario();
+  } catch (error) {
+    console.error("Erro ao obter produtos:", error);
+  }
+}
+
 getUsuario();
 
 const inputUser = document.getElementById("inputUser");
-
-console.log(inputUser);
 
 inputUser.oninput = (e) => {
   console.log(e.target.value);
@@ -37,18 +46,18 @@ function inserirLinha(usuarios) {
   var nomeContainer = document.querySelector(".colunaNome");
   var cpfContainer = document.querySelector(".colunaCPF");
 
-  checkContainer.innerHTML = ``;
-  idContainer.innerHTML = ``;
-  nomeContainer.innerHTML = ``;
-  cpfContainer.innerHTML = ``;
+  checkContainer.innerHTML = `<label class="hidden">In</label>`;
+  idContainer.innerHTML = `<label><strong>ID</strong></label>`;
+  nomeContainer.innerHTML = `<label><strong>Nome</strong></label>`;
+  cpfContainer.innerHTML = `<label><strong>CPF</strong></label>`;
 
   for (let i = 0; i < usuarios.length; i++) {
     var checkElement = document.createElement("div");
     checkElement.className = "linhaCheck";
     var checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
+    checkbox.type = "radio";
     checkbox.name = "usuarioCheckbox";
-    checkbox.value = usuarios[i].idUsuario;
+    checkbox.id = usuarios[i].idUsuario;
     checkElement.appendChild(checkbox);
     checkContainer.appendChild(checkElement);
 
@@ -68,3 +77,31 @@ function inserirLinha(usuarios) {
     cpfContainer.appendChild(cpfElement);
   }
 }
+
+const botaoExcluirUsuario = document.getElementById("botaoExcluirUsuario");
+
+botaoExcluirUsuario.onclick = function () {
+  const idUsuarioSelecionado = document.querySelectorAll('input[type="radio"]');
+  idUsuarioSelecionado.forEach((radio) => {
+    if (radio.checked) {
+      deleteUsuario(radio.id);
+    }
+  });
+};
+
+const botaoNovoUsuario = document.getElementById("botaoNovoUsuario");
+
+botaoNovoUsuario.onclick = function () {
+  window.location.href = "cadastroUsuariosForms.html";
+};
+
+const botaoEditarUsuario = document.getElementById("botaoEditarUsuario");
+
+botaoEditarUsuario.onclick = function () {
+  const idUsuarioSelecionado = document.querySelectorAll('input[type="radio"]');
+  idUsuarioSelecionado.forEach((radio) => {
+    if (radio.checked) {
+      window.location.href = `cadastroUsuariosForms.html?id=${radio.id}`;
+    }
+  });
+};

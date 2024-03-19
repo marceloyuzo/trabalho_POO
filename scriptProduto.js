@@ -31,3 +31,31 @@ const comprarBotao = document.getElementById("comprarBotao");
 comprarBotao.onclick = function () {
   window.location.href = `formaPagamento.html?id=${produtos.idProduto}`;
 };
+
+const botaoExcluirPedido = document.getElementById("botaoExcluirPedido");
+
+botaoExcluirPedido.onclick = function () {
+  const idUsuarioSelecionado = document.querySelectorAll('input[type="radio"]');
+  idUsuarioSelecionado.forEach((radio) => {
+    if (radio.checked) {
+      deleteUsuario(radio.id);
+    }
+  });
+};
+
+const botaoNovoPedido = document.getElementById("botaoNovoPedido");
+
+botaoNovoPedido.onclick = function () {
+  window.location.href = "cadastroUsuariosForms.html";
+};
+
+const botaoEditarPedido = document.getElementById("botaoEditarPedido");
+
+botaoEditarPedido.onclick = function () {
+  const idUsuarioSelecionado = document.querySelectorAll('input[type="radio"]');
+  idUsuarioSelecionado.forEach((radio) => {
+    if (radio.checked) {
+      window.location.href = `cadastroUsuariosForms.html?id=${radio.id}`;
+    }
+  });
+};

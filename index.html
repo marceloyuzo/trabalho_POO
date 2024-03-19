@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><h2>NOME DA LOJA</h2></a>
+
+      <div class="search">
+        <input
+          type="text"
+          name=""
+          class="inputSearch"
+          placeholder="O que você está procurando ?"
+        />
+        <span class="material-symbols-outlined" id="iconSearch">search</span>
+      </div>
+
+      <div class="iconesHeader">
+        <span class="material-symbols-outlined" id="iconCart"
+          >shopping_cart</span
+        >
+
+        <span class="material-symbols-outlined" id="iconProfile">person</span>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="ListaProdutos.html?categoria=cadeira">Cadeiras</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=mesa">Mesas</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=cama">Camas</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=guarda_roupa">Guarda Roupas</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=rack">Racks</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=estante">Estantes</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="menuUser" class="hidden">
+      <ul>
+        <li>
+          <a href="telaCadastroUsuario.html">Cadastrar-se</a>
+        </li>
+        <li>
+          <a href="telaLogin.html">Iniciar Sessão</a>
+        </li>
+        <li>
+          <a href="cadastroUsuarios.html">Lista de Usuários</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="containerMenuInicial">
+      <div class="titulo">
+        <label>Cadeiras</label>
+        <div class="linha"></div>
+      </div>
+      <div class="listaItem" id="listaCadeiras">
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+      </div>
+
+      <a
+        class="botaoVerMais"
+        id="verMaisCadeira"
+        href="ListaProdutos.html?categoria=cadeira"
+        >Ver Mais</a
+      >
+
+      <div class="titulo">
+        <label>Mesas</label>
+        <div class="linha"></div>
+      </div>
+      <div class="listaItem" id="listaMesas">
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label class="nomeProduto">Nome do Produto<br /></label>
+          <label class="precoProduto">R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+      </div>
+
+      <a
+        class="botaoVerMais"
+        id="verMaisMesa"
+        href="ListaProdutos.html?categoria=mesa"
+        >Ver Mais</a
+      >
+
+      <div class="titulo">
+        <label>Camas</label>
+        <div class="linha"></div>
+      </div>
+      <div class="listaItem" id="listaCamas">
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label class="nomeProduto">Nome do Produto<br /></label>
+          <label class="precoProduto">R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+      </div>
+
+      <a
+        class="botaoVerMais"
+        id="verMaisCama"
+        href="ListaProdutos.html?categoria=cama"
+        >Ver Mais</a
+      >
+
+      <div class="titulo">
+        <label>Guarda Roupas</label>
+        <div class="linha"></div>
+      </div>
+      <div class="listaItem" id="listaGuardaRoupas">
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+      </div>
+
+      <a
+        class="botaoVerMais"
+        id="verMaisGuardaRoupa"
+        href="ListaProdutos.html?categoria=guarda_roupa"
+        >Ver Mais</a
+      >
+
+      <div class="titulo">
+        <label>Racks</label>
+        <div class="linha"></div>
+      </div>
+      <div class="listaItem" id="listaRacks">
+        <a class="item" href="">
+          <img src="" class="fotoItem" />
+          <label class="nomeProduto">Nome do Produto<br /></label>
+          <label class="precoProduto">R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+      </div>
+
+      <a
+        class="botaoVerMais"
+        id="verMaisRack"
+        href="ListaProdutos.html?categoria=rack"
+        >Ver Mais</a
+      >
+
+      <div class="titulo">
+        <label>Estantes</label>
+        <div class="linha"></div>
+      </div>
+      <div class="listaItem" id="listaEstantes">
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label class="nomeProduto">Nome do Produto<br /></label>
+          <label class="precoProduto">R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+
+        <a class="item" href="#">
+          <img src="" class="fotoItem" />
+          <label>Nome do Produto<br /></label>
+          <label>R$999,99</label>
+        </a>
+      </div>
+
+      <a
+        class="botaoVerMais"
+        id="verMaisEstante"
+        href="ListaProdutos.html?categoria=estante"
+        >Ver Mais</a
+      >
+    </div>
+
+    <script src="script.js"></script>
+    <script src="scriptRequest.js"></script>
+  </body>
+</html>

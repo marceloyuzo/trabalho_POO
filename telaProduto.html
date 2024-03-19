@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><h2>NOME DA LOJA</h2></a>
+
+      <div class="search">
+        <input
+          type="text"
+          name=""
+          class="inputSearch"
+          placeholder="O que você está procurando ?"
+        />
+        <span class="material-symbols-outlined" id="iconSearch">search</span>
+      </div>
+
+      <div class="iconesHeader">
+        <span class="material-symbols-outlined" id="iconCart"
+          >shopping_cart</span
+        >
+
+        <span class="material-symbols-outlined" id="iconProfile">person</span>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="ListaProdutos.html?categoria=cadeira">Cadeiras</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=mesa">Mesas</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=cama">Camas</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=guarda_roupa">Guarda Roupas</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=rack">Racks</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=estante">Estantes</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="menuUser" class="hidden">
+      <ul>
+        <li>
+          <a href="telaCadastroUsuario.html">Cadastrar-se</a>
+        </li>
+        <li>
+          <a href="telaLogin.html">Iniciar Sessão</a>
+        </li>
+        <li>
+          <a href="cadastroUsuarios.html">Lista de Usuários</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="contentProduto">
+        <div class="historico">
+          <ul>
+            <li>
+              <a href="index.html">Produtos</a>
+            </li>
+            ->
+          </ul>
+          <div class="linha"></div>
+        </div>
+        <div class="produto">
+          <h2 class="nomeProduto">
+            NOME DO PRODUTO NOME DO PRODUTO NOME DO PRODUTO NOME DO PRODUTO
+          </h2>
+          <div class="infoProduto">
+            <img class="fotoProduto"></img>
+            <div>
+              <div class="preco">R$ 999,99</div>
+              <button id="comprarBotao">Comprar</button>
+            </div>
+          </div>
+
+          <div class="descProduto">
+            <div class="descTitulo">
+              Descrição do Produto
+              <div class="linha"></div>
+            </div>
+
+            <div class="infoDesc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Molestias aut et vitae velit in aliquam delectus inventore ipsa
+              incidunt tenetur, officia eos pariatur impedit tempore assumenda
+              iste corrupti dignissimos eius. lorem Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Eveniet fugit aliquid totam?
+              Voluptatibus illum dolores magnam libero, ipsum maiores saepe
+              eveniet perspiciatis error cumque tempora hic autem doloribus,
+              sint ducimus! Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Id, error! Ut dolorem quas voluptatem sapiente mollitia non
+              illo ipsa, exercitationem enim placeat aut iste quaerat, nemo a
+              nesciunt numquam at?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="scriptProduto.js"></script>
+  </body>
+</html>

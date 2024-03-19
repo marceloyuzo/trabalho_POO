@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><h2>NOME DA LOJA</h2></a>
+
+      <div class="search">
+        <input
+          type="text"
+          name=""
+          class="inputSearch"
+          placeholder="O que você está procurando ?"
+        />
+        <span class="material-symbols-outlined" id="iconSearch">search</span>
+      </div>
+
+      <div class="iconesHeader">
+        <span class="material-symbols-outlined" id="iconCart"
+          >shopping_cart</span
+        >
+
+        <span class="material-symbols-outlined" id="iconProfile">person</span>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="ListaProdutos.html?categoria=cadeira">Cadeiras</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=mesa">Mesas</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=cama">Camas</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=guarda_roupa">Guarda Roupas</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=rack">Racks</a>
+        </li>
+        <li>
+          <a href="ListaProdutos.html?categoria=estante">Estantes</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="menuUser" class="hidden">
+      <ul>
+        <li>
+          <a href="telaCadastroUsuario.html">Cadastrar-se</a>
+        </li>
+        <li>
+          <a href="telaLogin.html">Iniciar Sessão</a>
+        </li>
+        <li>
+          <a href="cadastroUsuarios.html">Lista de Usuários</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="contentPagamento">
+        <div class="pagamentoTitulo">
+          Formas de Pagamento
+          <div class="linha"></div>
+        </div>
+
+        <div class="formaPagamento">
+          <div>
+            <input
+              class="botaoPagamento"
+              type="radio"
+              id="0"
+              name="pagamento"
+              value="pagamento"
+            />
+            CARTÃO DE CRÉDITO
+          </div>
+
+          <span class="material-symbols-outlined"> credit_card </span>
+        </div>
+
+        <div class="formaPagamento">
+          <div>
+            <input
+              class="botaoPagamento"
+              type="radio"
+              id="1"
+              name="pagamento"
+              value="pagamento"
+            />
+            BOLETO BANCÁRIO
+          </div>
+
+          <span class="material-symbols-outlined"> barcode </span>
+        </div>
+
+        <div class="formaPagamento">
+          <div>
+            <input
+              class="botaoPagamento"
+              type="radio"
+              id="2"
+              name="pagamento"
+              value="pagamento"
+            />
+            PIX
+          </div>
+
+          <span class="material-symbols-outlined"> enable </span>
+        </div>
+
+        <button id="botaoFinalizar">FINALIZAR COMPRA</button>
+      </div>
+    </div>
+
+    <script src="scriptPagamento.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

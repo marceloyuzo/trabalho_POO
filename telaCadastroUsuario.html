@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"><h2>NOME DA LOJA</h2></a>
+    </header>
+    <div class="containerCadastro">
+      <div class="contentCadastroUsuario">
+        <h2>Cadastrar-se</h2>
+
+        <form id="formCadastroUsuario" action="">
+          <div>
+            <label> Nome Completo </label>
+            <input type="text" class="nome" name="nome" />
+          </div>
+
+          <div>
+            <label> Email </label>
+            <input type="text" class="email" name="email" />
+          </div>
+          <div>
+            <label>CPF</label>
+            <input type="text" class="cpf" name="cpf" />
+          </div>
+
+          <div>
+            <label>Endereço</label>
+            <input type="text" class="endereco" name="endereco" />
+          </div>
+
+          <div>
+            <label>Telefone</label>
+            <input type="text" class="telefone" name="telefone" />
+          </div>
+
+          <div>
+            <label> Senha </label>
+            <input type="password" class="senha" name="senha" />
+          </div>
+
+          <div>
+            <label> Confirmar Senha </label>
+            <input
+              type="password"
+              class="senhaConfimar"
+              name="senhaConfirmar"
+            />
+          </div>
+
+          <button id="cadastrarBotao">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="scriptCadastro.js"></script>
+  </body>
+</html>

@@ -8,29 +8,6 @@ const itelefone = document.querySelector(".telefone");
 const isenha = document.querySelector(".senha");
 const isenhaConfirmar = document.querySelector(".senhaConfimar");
 
-function verificarCadastro() {
-  const cpf = icpf.value;
-  const email = iemail.value;
-
-  fetch(`http://localhost:8080/usuarios?cpf=${cpf}&email=${email}`)
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Erro ao verificar cadastro");
-      }
-      return response.json();
-    })
-    .then((data) => {
-      if (data.length > 0) {
-        alert("Usuário já esta cadastrado.");
-      } else {
-        cadastrar();
-      }
-    })
-    .catch((error) => {
-      console.error("Erro ao verificar cadastro", error);
-    });
-}
-
 function cadastrar() {
   fetch("http://localhost:8080/usuarios", {
     headers: {
@@ -75,6 +52,6 @@ function limpar() {
 
 formulario.addEventListener("submit", function (event) {
   event.preventDefault();
-  verificarCadastro();
+  cadastrar();
   limpar();
 });
